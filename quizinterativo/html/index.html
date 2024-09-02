@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Interativo</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Qual é a linguagem principal para estilização de páginas web?</p>
+                <label><input type="radio" name="q1" value="a"> JavaScript</label><br>
+                <label><input type="radio" name="q1" value="b"> HTML</label><br>
+                <label><input type="radio" name="q1" value="c"> CSS</label><br>
+                <label><input type="radio" name="q1" value="d"> Python</label>
+            </div>
+            <div class="question">
+                <p>2. Qual tag é usada para criar um link em HTML?</p>
+                <label><input type="radio" name="q2" value="a"> &lt;link&gt;</label><br>
+                <label><input type="radio" name="q2" value="b"> &lt;a&gt;</label><br>
+                <label><input type="radio" name="q2" value="c"> &lt;href&gt;</label><br>
+                <label><input type="radio" name="q2" value="d"> &lt;url&gt;</label>
+            </div>
+            <div class="question">
+                <p>3. Qual é a sintaxe correta para selecionar todos os parágrafos em CSS?</p>
+                <label><input type="radio" name="q3" value="a"> p { color: red; }</label><br>
+                <label><input type="radio" name="q3" value="b"> .p { color: red; }</label><br>
+                <label><input type="radio" name="q3" value="c"> #p { color: red; }</label><br>
+                <label><input type="radio" name="q3" value="d"> p { color: blue; }</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Enviar Respostas</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="../javaScript/script.js"></script>
+</body>
+</html>
